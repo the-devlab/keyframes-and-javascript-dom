@@ -24,7 +24,7 @@ body {
 .battery-body {
   border: 10px solid rgb(255, 255, 255);
   border-radius: 0.7rem;
-  width: 250px;
+  min-width: 250px;
 }
 
 .battery-tip {
@@ -86,5 +86,15 @@ button:disabled:hover {
   }
   100% {
     width: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 5vh;
+  }
+
+  button {
+    margin-bottom: 0.5rem;
   }
 }
